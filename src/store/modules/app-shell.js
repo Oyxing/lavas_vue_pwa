@@ -295,6 +295,45 @@ export default {
                     },
                     {
                         // 按钮的名字
+                        name: 'shop',
+
+                        // 显示的 icon
+                        icon: 'shop',
+
+                        // 显示的文字
+                        text: '商店',
+
+                        // 路由信息
+                        route: '/shop'
+                    },
+                    {
+                        // 按钮的名字
+                        name: 'star',
+
+                        // 显示的 icon
+                        icon: 'star',
+
+                        // 显示的文字
+                        text: '分享',
+
+                        // 路由信息
+                        route: '/star'
+                    },
+                    {
+                        // 按钮的名字
+                        name: 'sort',
+
+                        // 显示的 icon
+                        icon: 'sort',
+
+                        // 显示的文字
+                        text: '更多',
+
+                        // 路由信息
+                        route: '/sort'
+                    },
+                    {
+                        // 按钮的名字
                         name: 'user',
 
                         // 显示的 icon
@@ -306,6 +345,7 @@ export default {
                         // 路由信息
                         route: '/user'
                     }
+                     
                 ]
             },
             actions: {

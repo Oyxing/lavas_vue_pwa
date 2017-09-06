@@ -2,7 +2,7 @@
     <div>
         <div class="content">
             <h2>LAVAS</h2>
-            <h4>Home</h4>
+            <h4>Sort</h4>
         </div>
     </div>
 </template>
@@ -11,7 +11,7 @@
 import {mapActions} from 'vuex';
 
 export default {
-    name: 'home',
+    name: 'sort',
     props: {},
     methods: {
         ...mapActions('appShell/appHeader', [
@@ -41,7 +41,7 @@ export default {
                 }
             ]
         });
-        this.activateBottomNav('home');
+        this.activateBottomNav('sort');
         this.showBottomNav();
     }
 };

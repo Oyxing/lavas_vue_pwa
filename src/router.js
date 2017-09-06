@@ -13,6 +13,9 @@ let Detail = () => import('@/pages/Detail.vue');
 let NotFound = () => import('@/pages/NotFound.vue');
 let User = () => import('@/pages/User.vue');
 let Search = () => import('@/pages/Search.vue');
+let Shop = () => import('@/pages/Shop.vue');
+let Sort = () => import('@/pages/Sort.vue');
+let Star = () => import('@/pages/Star.vue');
 
 Vue.use(Router);
 
@@ -44,6 +47,21 @@ export function createRouter() {
                 path: '/search',
                 name: 'search',
                 component: Search
+            },
+            {
+                path: '/shop',
+                name: 'shop',
+                component: Shop
+            },
+            {
+                path: '/sort',
+                name: 'sort',
+                component: Sort
+            },
+            {
+                path: '/star',
+                name: 'star',
+                component: Star
             },
             {
                 path: '/404',
