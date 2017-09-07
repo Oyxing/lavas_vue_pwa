@@ -31,6 +31,12 @@ import {mapActions} from 'vuex';
 export default {
     name: 'detail',
     methods: {
+        Id(){
+              console.log('每页的id') 
+              console.log(this.$route.params.id) 
+        },
+
+        
         ...mapActions('appShell/appHeader', [
             'setAppHeader'
         ]),
@@ -44,6 +50,9 @@ export default {
         });
     },
     created() {
+        //每页的id
+        this.Id()
+        
         this.setAppHeader({
             show: true,
             title: 'Lavas',

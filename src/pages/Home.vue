@@ -1,6 +1,9 @@
 <template>
     <div>
         <div class="content">
+            <div class="slide">
+                <img src="/static/img/image/38f7de64a70f4a5b88cd1539a7717208.jpg" alt="">
+            </div>
             <h2>LAVAS</h2>
             <h4>Home</h4>
         </div>
@@ -53,7 +56,7 @@ $text-color := rgba($material-theme.text-color, $material-theme.primary-text-per
 .content
     width 100%
     position absolute
-    top 50%
+    top 150px
     left 50%
     transform translate(-50%, -50%)
 
@@ -64,4 +67,8 @@ $text-color := rgba($material-theme.text-color, $material-theme.primary-text-per
     h2, h4
         color $text-color
 
+.slide
+    img
+        width 95%
+        height 50%
 </style>

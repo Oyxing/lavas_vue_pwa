@@ -1,11 +1,18 @@
 <template>
-    <div>
-        <div class="content">
-            <h2>LAVAS</h2>
-            <h4>Shop</h4>
-        </div>
-    </div>
+  <div class="text-xs-center shop">
+    <v-menu >
+      <v-btn dark primary slot="activator">Scale Transition</v-btn>
+      <v-list>
+        <v-list-tile v-for="n in 5" :key="n" @click="">
+          <v-list-tile-title v-text="'Item ' + n"></v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
+  </div>
 </template>
+
+
+
 
 <script>
 import {mapActions} from 'vuex';

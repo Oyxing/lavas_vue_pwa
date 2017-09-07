@@ -1,11 +1,36 @@
 <template>
-    <div>
-        <div class="content">
-            <h2>LAVAS</h2>
-            <h4>Sort</h4>
-        </div>
-    </div>
+<div class="box">
+  <v-card class="elevation-0">
+    <v-card-text>
+      <v-container fluid class="pa-0">
+        <v-layout row wrap>
+          <v-flex xs12 sm3>
+            <v-btn icon class="pink--text">
+              <v-icon>favorite</v-icon>
+            </v-btn>
+          </v-flex>
+          <v-flex xs12 sm3>
+            <v-btn icon class="indigo--text">
+              <v-icon>star</v-icon>
+            </v-btn>
+          </v-flex>
+          <v-flex xs12 sm3>
+            <v-btn icon class="green--text">
+              <v-icon>cached</v-icon>
+            </v-btn>
+          </v-flex>
+          <v-flex xs12 sm3>
+            <v-btn icon class="deep-orange--text">
+              <v-icon>thumb_up</v-icon>
+            </v-btn>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-card-text>
+  </v-card>
+  </div>
 </template>
+
 
 <script>
 import {mapActions} from 'vuex';
@@ -64,4 +89,6 @@ $text-color := rgba($material-theme.text-color, $material-theme.primary-text-per
     h2, h4
         color $text-color
 
+.layout .flex.xs12
+    flex-basis 0
 </style>

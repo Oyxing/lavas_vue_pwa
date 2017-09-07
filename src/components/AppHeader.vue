@@ -21,9 +21,10 @@
                     </slot>
                 </div>
             </div>
+            <!-- 标题 -->
             <div class="app-header-middle" v-cloak>
                 <slot name="title">
-                    {{ title }}
+                     电影
                 </slot>
             </div>
             <div class="app-header-right">

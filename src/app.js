@@ -9,6 +9,7 @@ import {createRouter} from './router';
 import store from './store';
 import App from './App.vue';
 import Icon from 'vue-awesome/components/Icon.vue';
+import '../node_modules/konva/konva.min.js'
 
 Vue.use(Vuetify);
 Vue.component('icon', Icon);
