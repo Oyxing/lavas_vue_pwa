@@ -70,7 +70,7 @@ export default {
         stroke: 'black',
         strokeWidth: 1,
         offset: {
-            x: 50 ,
+            x: 30 ,
             y: 0 
         }
     });
@@ -85,7 +85,11 @@ export default {
         fill: '#f5f5f5',
         stroke: '#00D2FF',
         stroke: 'black',
-        strokeWidth: 1
+        strokeWidth: 1,
+         offset: {
+            x: -20 ,
+            y: 0
+        }
     });
     var Ellipse2 = new Konva.Ellipse({
         x: name.getWidth() / 10,
@@ -98,7 +102,7 @@ export default {
         stroke: 'black',
         strokeWidth: 1,
          offset: {
-            x: 0 ,
+            x: -20 ,
             y: -200
         }
     });
@@ -113,7 +117,7 @@ export default {
         stroke: 'black',
         strokeWidth: 1,
          offset: {
-            x: 0 ,
+            x: -20 ,
             y: -100 
         }
     });
@@ -128,7 +132,7 @@ export default {
         stroke: 'black',
         strokeWidth: 1.5,
          offset: {
-            x: 0 ,
+            x: -20 ,
             y: -50 
         }
     });  
@@ -141,7 +145,7 @@ export default {
         stroke: 'black',
         strokeWidth: 1,   
         offset: {
-            x: 50 ,
+            x: 30 ,
             y: -200 
         }
     });
@@ -153,7 +157,7 @@ export default {
         height: -50,
         strokeWidth: 1,   
         offset: {
-            x: 50 ,
+            x: 30 ,
             y: -100 
         }
     });
