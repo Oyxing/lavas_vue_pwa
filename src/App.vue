@@ -50,6 +50,7 @@
 </template>
 
 <script>
+//  mapState  mapActions  应用这两个 方程 储存 mapState(命名,赋值)
 import {mapState, mapActions} from 'vuex';
 import AppHeader from '@/components/AppHeader';
 import AppSidebar from '@/components/AppSidebar';
@@ -84,6 +85,7 @@ export default {
             'activateBottomNav'
         ]),
         handleBeforeEnter(el) {
+            
             this.setPageSwitching(true);
         },
         handleAfterEnter(el) {

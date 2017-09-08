@@ -5,11 +5,15 @@
 
 import Vue from 'vue';
 import Vuetify from 'vuetify';
+import Axios from 'axios'
+import VueRes  from 'vue-resource'
+
 import {createRouter} from './router';
 import store from './store';
 import App from './App.vue';
 import Icon from 'vue-awesome/components/Icon.vue';
 import '../node_modules/konva/konva.min.js'
+Vue.use(VueRes,Axios)
 
 Vue.use(Vuetify);
 Vue.component('icon', Icon);

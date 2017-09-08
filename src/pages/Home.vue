@@ -16,6 +16,7 @@ import {mapActions} from 'vuex';
 export default {
     name: 'home',
     props: {},
+   
     methods: {
         ...mapActions('appShell/appHeader', [
             'setAppHeader'
@@ -23,7 +24,9 @@ export default {
         ...mapActions('appShell/appBottomNavigator', [
             'showBottomNav',
             'activateBottomNav'
-        ])
+        ]),
+      
+
     },
     async asyncData() {
         await new Promise((resolve, reject) => {
